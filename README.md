@@ -38,6 +38,25 @@ This repo collects the templates I used and adapted, organized by use case, so y
 
 ______________________________________________________________________
 
+## :bulb: The Core Insight: Project-Driven, Not Publication-Driven
+
+The biggest mistake PhD students make when applying to industry is submitting a publication-driven CV. Here is the mindset shift:
+
+| Academic CV | Industry Resume |
+|---|---|
+| "I published 10 papers at ICRA, RSS, RA-L…" | "I built X system that does Y, deployed on Z platforms" |
+| Publications are the story | Projects are the story — publications are a one-line signal |
+| Venue and novelty matter | Impact, scale, and real-world deployment matter |
+| Readers are domain experts | First reader is an ATS parser, then a recruiter, then an engineer |
+
+**The "Key Relevant Projects" section is the most important thing to customize.** For every application, ask: *which of my projects is most relevant to this specific team's work?* An AV perception team wants to see detection/segmentation work. A mapping team wants SLAM/HD map work. Swap your projects accordingly — do not send the same resume everywhere.
+
+Open-source projects with GitHub stars are particularly powerful: they prove not just that you can build something, but that **others rely on your code** — which is exactly what production teams want to hire.
+
+See [`GUIDELINES.md`](GUIDELINES.md) for the full CV→Resume conversion guide.
+
+______________________________________________________________________
+
 ## :thinking: Which Template Should I Use?
 
 > **Targeting industry (including big tech)?** Use `jakes-format/` first. Big tech companies (Google, Meta, Amazon, Apple, Microsoft, etc.) route resumes through applicant tracking system (ATS) before a human ever reads them.
