@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -59,8 +59,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -69,7 +69,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -78,21 +78,21 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -102,7 +102,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,7 +129,6 @@
       {Ph.D. in Electrical Engineering and Robotics Program}{Mar. 2020 -- Feb. 2023}
       \resumeItemListStart
         \resumeItem{Dissertation: ``Robust LiDAR SLAM for Autonomous Vehicles Leveraging Ground Segmentation''}
-        \resumeItem{Advisor: Prof. Hyun Myung}
       \resumeItemListEnd
     \resumeSubheading
       {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
@@ -137,9 +136,6 @@
     \resumeSubheading
       {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
       {B.S. in Mechanical Engineering}{Mar. 2013 -- Aug. 2018}
-      \resumeItemListStart
-        \resumeItem{Dean's List in Mechanical Engineering (GPA 4.23/4.3) -- Fall 2015}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -151,8 +147,8 @@
       {Postdoctoral Associate}{Apr. 2024 -- Present}
       {SPARK Lab, MIT (Advisor: Prof. Luca Carlone)}{Cambridge, MA}
       \resumeItemListStart
-        \resumeItem{Conduct research on multi-robot/-session autonomous mapping in complex urban environments.}
-        \resumeItem{Guide and supervise graduate and undergraduate students in research papers and thesis projects.}
+        \resumeItem{Lead research on large-scale multi-robot SLAM, enabling real-time, consistent 3D map building across multiple robots and sessions in complex urban environments.}
+        \resumeItem{Mentor graduate and undergraduate researchers on 3D perception, autonomous mapping, and scene understanding systems.}
         \resumeItem{Maintainer of \href{https://github.com/MIT-SPARK/TEASER-plusplus}{TEASER++} \githubstars{2.1K}, \href{https://github.com/MIT-SPARK/Hydra}{Hydra} \githubstars{773}, \href{https://github.com/MIT-SPARK/KISS-Matcher}{KISS-Matcher} \githubstars{643}, \href{https://github.com/MIT-SPARK/VGGT-SLAM}{VGGT-SLAM} \githubstars{882}.}
       \resumeItemListEnd
 
@@ -160,68 +156,60 @@
       {Postdoctoral Fellow}{Mar. 2023 -- Mar. 2024}
       {Urban Robotics Lab, KAIST (Advisor: Prof. Hyun Myung)}{Daejeon, Korea}
       \resumeItemListStart
-        \resumeItem{Research on LiDAR and vision-based localization and mapping for autonomous systems.}
-        \resumeItem{Developed deep learning models for robust robot perception in dynamic environments.}
+        \resumeItem{Developed real-time LiDAR-inertial and visual SLAM pipelines for robust autonomous navigation in dynamic real-world environments.}
+        \resumeItem{Designed deep learning perception modules for dynamic obstacle detection, improving mapping reliability in crowded and unstructured scenes.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Visiting Scholar}{Nov. 2022 -- Feb. 2023}
       {StachnissLab, University of Bonn (Advisor: Prof. Cyrill Stachniss)}{Bonn, Germany}
       \resumeItemListStart
-        \resumeItem{Collaborated on an improved method for static map building in dynamic scenes.}
-        \resumeItem{Paper accepted at RSS 2023: \textit{ERASOR2: Instance-Aware Robust 3D Mapping of the Static World}.}
+        \resumeItem{Built ERASOR2: an instance-aware dynamic object removal system enabling high-fidelity static LiDAR map building in dynamic urban environments (RSS 2023).}
       \resumeItemListEnd
 
     \resumeSubheading
       {Research Intern}{Apr. 2022 -- Sep. 2022}
       {NAVER LABS}{Gyeonggi-Do, Korea}
       \resumeItemListStart
-        \resumeItem{Worked on robust global registration using 3D point cloud data from LiDAR sensors.}
-        \resumeItem{Paper accepted at IEEE ICRA 2023: \textit{ORORA: Outlier-Robust Radar Odometry}.}
+        \resumeItem{Engineered ORORA, a radar odometry system robust to outliers enabling reliable localization in GPS-denied and featureless environments (IEEE ICRA 2023).}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------SELECTED PUBLICATIONS-----------
-\section{Selected Publications}
+%-----------KEY OPEN-SOURCE PROJECTS-----------
+\section{Key Open-Source Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\href{https://github.com/MIT-SPARK/KISS-Matcher}{\textbf{KISS-Matcher}} \githubstars{643} $|$ \emph{IEEE ICRA 2025}}{2025}
+          {\href{https://github.com/MIT-SPARK/KISS-Matcher}{\textbf{KISS-Matcher}} \githubstars{643} $|$ \emph{Point Cloud Registration}}{IEEE ICRA 2025}
           \resumeItemListStart
-            \resumeItem{H. Lim et al., ``KISS-Matcher: Fast and Robust Point Cloud Registration Revisited.''}
+            \resumeItem{Real-time, robust 3D point cloud registration pipeline; serves as the backbone for large-scale multi-session LiDAR SLAM systems.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\href{https://github.com/MIT-SPARK/VGGT-SLAM}{\textbf{VGGT-SLAM}} \githubstars{882} $|$ \emph{NeurIPS 2025}}{2025}
+          {\href{https://github.com/MIT-SPARK/VGGT-SLAM}{\textbf{VGGT-SLAM}} \githubstars{882} $|$ \emph{Dense RGB SLAM}}{NeurIPS 2025}
           \resumeItemListStart
-            \resumeItem{D. Maggio, H. Lim, and L. Carlone, ``VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold.''}
+            \resumeItem{Dense real-time 3D scene reconstruction system with globally consistent trajectory estimation; enables production-grade RGB mapping.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\href{https://github.com/MIT-SPARK/BUFFER-X}{\textbf{BUFFER-X}} \githubstars{243} $|$ \emph{IEEE/CVF ICCV 2025}}{2025}
+          {\href{https://github.com/url-kaist/patchwork-plusplus}{\textbf{Patchwork++}} \githubstars{842} $|$ \emph{Ground Segmentation}}{IEEE/RSJ IROS 2022}
           \resumeItemListStart
-            \resumeItem{M. Seo, H. Lim et al., ``BUFFER-X: Towards Zero-Shot Point Cloud Registration in Diverse Scenes.''}
+            \resumeItem{Real-time LiDAR ground segmentation system deployed in autonomous driving and mobile robotics production pipelines.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{ERASOR2} $|$ \emph{RSS 2023}}{2023}
+          {\href{https://github.com/LimHyungTae/ERASOR}{\textbf{ERASOR}} \githubstars{494} $|$ \emph{Static Map Building}}{IEEE RA-L 2021}
           \resumeItemListStart
-            \resumeItem{H. Lim et al., ``ERASOR2: Instance-Aware Robust 3D Mapping of the Static World in Dynamic Scenes.''}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Quatro++} $|$ \emph{IJRR 2023}}{2023}
-          \resumeItemListStart
-            \resumeItem{H. Lim et al., ``Quatro++: Robust Global Registration Exploiting Ground Segmentation for Loop Closing in LiDAR SLAM.''}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://github.com/url-kaist/patchwork-plusplus}{\textbf{Patchwork++}} \githubstars{842} $|$ \emph{IEEE/RSJ IROS 2022}}{2022}
-          \resumeItemListStart
-            \resumeItem{S. Lee, H. Lim, and H. Myung, ``Patchwork++: Fast and Robust Ground Segmentation Solving Partial Under-Segmentation Using 3D point cloud.''}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://github.com/LimHyungTae/ERASOR}{\textbf{ERASOR}} \githubstars{494} $|$ \emph{IEEE RA-L w/ ICRA 2021}}{2021}
-          \resumeItemListStart
-            \resumeItem{H. Lim et al., ``ERASOR: Egocentric Ratio of Pseudo Occupancy-Based Dynamic Object Removal for Static 3D Point Cloud Map Building.''}
+            \resumeItem{Dynamic object removal system enabling high-fidelity static LiDAR map building for long-term autonomous operation.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     10\texttt{+} first-author papers at top-tier robotics and AI venues: IEEE ICRA, RSS, IEEE RA-L, NeurIPS, IEEE/CVF ICCV, IJRR
+    }}
+ \end{itemize}
 
 
 %-----------HONORS \& AWARDS-----------

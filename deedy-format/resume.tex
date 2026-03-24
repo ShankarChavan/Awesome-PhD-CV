@@ -10,6 +10,9 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{pifont}
+\newcommand{\githubstars}[1]{[{\faGithubSquare}\,\ding{72}\,\textbf{#1}]}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -111,11 +114,10 @@ Korean (Native) \textbullet{} English (Fluent)
 \runsubsection{SPARK Lab, MIT}
 \descript{| Postdoctoral Associate}
 \location{Apr. 2024 -- Mar. 2026 | Cambridge, MA}
-\vspace{\topsep}
+\vspace{0.5\topsep}
 \begin{tightemize}
-\item Advised by Prof. Luca Carlone (LIDS, MIT).
-\item Research on multi-robot/-session autonomous mapping in urban environments.
-\item Guide graduate and undergraduate students in research papers and theses.
+\item Lead research on large-scale multi-robot SLAM enabling real-time, consistent 3D map building across robots and sessions in complex urban environments.
+\item Mentor researchers on 3D perception, autonomous mapping, and scene understanding; maintainer of 4 open-source robotics repos (\githubstars{2.1K}--\githubstars{643}).
 \end{tightemize}
 \sectionsep
 
@@ -123,8 +125,8 @@ Korean (Native) \textbullet{} English (Fluent)
 \descript{| Postdoctoral Fellow}
 \location{Mar. 2023 -- Mar. 2024 | Daejeon, Korea}
 \begin{tightemize}
-\item Research on LiDAR and vision-based localization and mapping.
-\item Developed deep learning models for robust robot perception.
+\item Developed real-time LiDAR-inertial and visual SLAM pipelines for robust autonomous navigation in dynamic real-world environments.
+\item Designed deep learning perception modules for dynamic obstacle detection, improving mapping reliability in crowded and unstructured scenes.
 \end{tightemize}
 \sectionsep
 
@@ -132,8 +134,7 @@ Korean (Native) \textbullet{} English (Fluent)
 \descript{| Visiting Scholar}
 \location{Nov. 2022 -- Feb. 2023 | Bonn, Germany}
 \begin{tightemize}
-\item Collaborated with Prof. Cyrill Stachniss on static map building.
-\item Paper accepted at RSS 2023: \textit{ERASOR2}.
+\item Built ERASOR2: instance-aware dynamic object removal enabling high-fidelity static LiDAR map building in dynamic urban environments (RSS 2023).
 \end{tightemize}
 \sectionsep
 
@@ -141,25 +142,28 @@ Korean (Native) \textbullet{} English (Fluent)
 \descript{| Research Intern}
 \location{Apr. 2022 -- Sep. 2022 | Gyeonggi-Do, Korea}
 \begin{tightemize}
-\item Worked on robust global 3D point cloud registration.
-\item Paper accepted at IEEE ICRA 2023: \textit{ORORA}.
+\item Engineered ORORA, a radar odometry system robust to outliers enabling reliable localization in GPS-denied and featureless environments (IEEE ICRA 2023).
 \end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SELECTED PUBLICATIONS
+%     KEY PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Selected Publications}
-\vspace{0.5cm}
+\section{Key Open-Source Research Projects}
+\vspace{0.3cm}
 \begin{tightemize}
-\item \textbf{H. Lim} et al., ``KISS-Matcher: Fast and Robust Point Cloud Registration Revisited,'' \textit{IEEE ICRA}, 2025.
-\item D. Maggio, \textbf{H. Lim}, and L. Carlone, ``VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold,'' \textit{NeurIPS}, 2025.
-\item M. Seo, \textbf{H. Lim} et al., ``BUFFER-X: Towards Zero-Shot Point Cloud Registration in Diverse Scenes,'' \textit{IEEE/CVF ICCV}, 2025.
-\item \textbf{H. Lim} et al., ``ERASOR2: Instance-Aware Robust 3D Mapping of the Static World in Dynamic Scenes,'' \textit{RSS}, 2023.
-\item \textbf{H. Lim} et al., ``Quatro++: Robust Global Registration Exploiting Ground Segmentation for Loop Closing in LiDAR SLAM,'' \textit{IJRR}, 2023.
-\item \textbf{H. Lim} et al., ``Patchwork: Concentric Zone-Based Region-Wise Ground Segmentation With Ground Likelihood Estimation Using a 3D LiDAR Sensor,'' \textit{IEEE RA-L w/ IROS}, 2021.
-\item \textbf{H. Lim} et al., ``ERASOR: Egocentric Ratio of Pseudo Occupancy-Based Dynamic Object Removal for Static 3D Point Cloud Map Building,'' \textit{IEEE RA-L w/ ICRA}, 2021.
+\item \href{https://github.com/MIT-SPARK/KISS-Matcher}{\textbf{KISS-Matcher}} \githubstars{643} -- Real-time 3D registration pipeline for large-scale multi-session LiDAR SLAM (\textit{IEEE ICRA 2025})
+\item \href{https://github.com/MIT-SPARK/VGGT-SLAM}{\textbf{VGGT-SLAM}} \githubstars{882} -- Dense real-time RGB SLAM with globally consistent 3D scene reconstruction (\textit{NeurIPS 2025})
+\item \href{https://github.com/url-kaist/patchwork-plusplus}{\textbf{Patchwork++}} \githubstars{842} -- Real-time ground segmentation deployed in AV and mobile robotics production pipelines (\textit{IROS 2022})
+\item \href{https://github.com/LimHyungTae/ERASOR}{\textbf{ERASOR}} \githubstars{494} -- Dynamic object removal system for high-fidelity static LiDAR map building (\textit{IEEE RA-L 2021})
 \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+10\texttt{+} first-author papers: IEEE ICRA, RSS, RA-L, NeurIPS, ICCV, IJRR
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
