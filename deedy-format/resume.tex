@@ -1,0 +1,151 @@
+% Deedy CV/Resume Template
+% Original author: Debarghya Das (http://debarghyadas.com)
+% Repository: https://github.com/deedy/Deedy-Resume
+% License: Apache 2.0
+%
+% NOTE: This template requires the deedy-resume.cls file to be in the same
+% directory. You can download it from:
+% https://github.com/deedy/Deedy-Resume/blob/master/deedy-resume-reversed.cls
+%
+\documentclass[letterpaper]{deedy-resume}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{First}{Last}{
+  \urlstyle{same}\href{https://your-website.com}{your-website.com} |
+  \href{mailto:your@email.com}{your@email.com} | 123-456-7890
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE (LEFT)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\runsubsection{University Name}
+\descript{| BS in Computer Science}
+\location{Expected May 2024 | City, State}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures \\
+Algorithms \\
+Database Systems \\
+Operating Systems \\
+Machine Learning \\
+Computer Networks
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming}
+\location{Experienced:}
+Python \textbullet{} Java \textbullet{} JavaScript \\
+\location{Familiar:}
+C++ \textbullet{} Go \textbullet{} Rust \\
+\sectionsep
+
+\subsection{Tools \& Frameworks}
+Git \textbullet{} Docker \textbullet{} Linux \\
+React \textbullet{} Node.js \textbullet{} Flask \\
+PostgreSQL \textbullet{} MongoDB
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Links}
+GitHub:// \href{https://github.com/yourusername}{\bf yourusername} \\
+LinkedIn:// \href{https://www.linkedin.com/in/yourusername}{\bf yourusername} \\
+\sectionsep
+
+\end{minipage}
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO (RIGHT)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{Company Name}
+\descript{| Software Engineer Intern}
+\location{Jun 2023 -- Aug 2023 | San Francisco, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built and deployed microservices handling 10K+ requests/day using Python and FastAPI
+\item Reduced API response latency by 40\% through query optimization and caching strategies
+\item Collaborated with a cross-functional team of 5 engineers to ship a new user-facing feature
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Research Lab}
+\descript{| Undergraduate Research Assistant}
+\location{Jan 2023 -- May 2023 | University City, State}
+\begin{tightemize}
+\item Developed a computer vision pipeline for object detection using PyTorch, achieving 92\% mAP
+\item Processed and augmented 50K+ images for training data preparation
+\item Co-authored a paper submitted to a top-tier conference
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Project Name}
+\descript{| Python, React, PostgreSQL}
+\location{Sep 2023 -- Present}
+\begin{tightemize}
+\item Developed a full-stack web application for real-time data visualization
+\item Implemented OAuth 2.0 authentication and role-based access control
+\item Deployed on AWS using Docker containers with CI/CD via GitHub Actions
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Another Project}
+\descript{| C++, CMake}
+\location{Jan 2023 -- May 2023}
+\begin{tightemize}
+\item Implemented a high-performance graph algorithm library with O(V+E) traversal
+\item Wrote comprehensive unit tests achieving 95\% code coverage
+\item Published as an open-source package with 100+ GitHub stars
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS / HONORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards}
+\begin{tabular}{rll}
+2023 & Dean's List & University Name \\
+2022 & 1st Place & ACM Programming Competition \\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
