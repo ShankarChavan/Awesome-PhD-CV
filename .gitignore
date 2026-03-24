@@ -11,6 +11,9 @@
 *.xdv
 *.bcf
 *.run.xml
+*.pdf
+
+*/resume.pdf
 
 # macOS
 .DS_Store
