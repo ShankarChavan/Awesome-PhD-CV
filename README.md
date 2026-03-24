@@ -2,6 +2,32 @@
 
 A curated collection of LaTeX CV/resume templates for PhD students, postdocs, and faculty applicants. Each format targets a different use case — pick the one that fits your needs.
 
+## Introduction
+
+Hey! I'm [Hyungtae Lim](https://limhyungtae.github.io/hyungtae-lim/), a robotics researcher who recently wrapped up a postdoc at MIT and just landed a job at [Zoox](https://zoox.com/).
+
+While preparing my industry applications, I quickly realized there's a huge discrepancy between what a big tech company needs and what academia expects. An academic CV is long, publication-heavy, and formatted for a human reviewer who cares about your research story. An industry resume needs to survive an ATS filter first — and a lot of the LaTeX tricks we use in academic CVs (custom fonts, multi-column layouts, fancy glyphs) silently break those parsers before a recruiter ever sees your name.
+
+This repo collects the templates I used and adapted, organized by use case, so you don't have to figure that out the hard way.
+
+## Which Template Should I Use?
+
+
+> **Targeting industry (including big tech)?** Use `jakes-format/` first. Big tech companies (Google, Meta, Amazon, Apple, Microsoft, etc.) route resumes through applicant tracking system (ATS) before a human ever reads them.
+Jake's format is plain pdfLaTeX with no custom fonts, no multi-column layout, and no special glyphs — all of which are common ATS failure points.
+If you prefer a denser, two-column layout and are confident the company accepts it, `deedy-format/` is a strong alternative.
+>
+> **Applying for a PhD program or academic position?** Use `research-cv/` — it supports multi-page layouts, full publication lists, and the detailed academic history that faculty committees expect.
+
+| Template | Best For | Pages | Columns | Engine |
+|----------|----------|-------|---------|--------|
+| **Awesome-CV** | Faculty/postdoc applications, academic CV | Multi-page | 1 | XeLaTeX |
+| **Jake's** | Industry SWE/internship applications | 1 | 1 | pdfLaTeX |
+| **Deedy** | Experienced tech professionals | 1 | 2 | XeLaTeX |
+
+
+---
+
 ## Templates
 
 ### 1. Awesome-CV Format (`research-cv/`)
@@ -38,7 +64,7 @@ The most popular LaTeX resume template on the internet — widely used for **ind
 - `resume.tex` — Single self-contained file
 
 **Key features:**
-- ATS-friendly (machine-readable, no fancy formatting that breaks parsers)
+- **ATS-optimized** — plain pdfLaTeX output passes big tech ATS systems (no custom fonts, no multi-column layout, no special glyphs that confuse parsers)
 - Single-page, single-column layout
 - Clean section dividers with `\titlerule`
 - Custom commands for consistent formatting (`\resumeSubheading`, `\resumeItem`, etc.)
@@ -76,14 +102,6 @@ xelatex resume.tex
 ```
 
 ---
-
-## Which Template Should I Use?
-
-| Template | Best For | Pages | Columns | Engine |
-|----------|----------|-------|---------|--------|
-| **Awesome-CV** | Faculty/postdoc applications, academic CV | Multi-page | 1 | XeLaTeX |
-| **Jake's** | Industry SWE/internship applications | 1 | 1 | pdfLaTeX |
-| **Deedy** | Experienced tech professionals | 1 | 2 | XeLaTeX |
 
 ## License
 
